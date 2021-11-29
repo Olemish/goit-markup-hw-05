@@ -878,7 +878,9 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  transition: opacity 250ms, visibility 250ms;
+  transition: opacity 250ms linear, visibility 250ms linear;
+  visibility: visible;
+  opacity: 1;
 }
 .backdrop .is-hidden .modal {
   transform: scale(1.5) rotate(180deg);
@@ -894,8 +896,9 @@ h6 {
   bottom: 0;
   transform: translate(-50%, -50%);
   position: absolute;
-  transition: transform 250ms;
+  transition: transform 250ms, perspective-origin 250ms;
 }
+
 .modal-close {
   width: 30px;
   height: 30px;
