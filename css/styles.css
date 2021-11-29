@@ -884,7 +884,7 @@ h6 {
 }
 .backdrop .is-hidden .modal {
   transform: scale(1.5) rotate(180deg);
-  transition: transform 250ms;
+  transition: transform 250ms perspective-origin 250ms;
 }
 .modal {
   width: 528px;
